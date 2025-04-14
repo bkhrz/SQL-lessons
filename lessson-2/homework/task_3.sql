@@ -4,4 +4,4 @@ CREATE TABLE photos(
     photo VARBINARY(MAX)
 );
 
-INSERT INTO photos SELECT * FROM OPENROWSET(BULK '/Users/behruz/Pictures/contract', SINGLE_BLOB) AS IMG
+INSERT INTO photos SELECT * FROM OPENROWSET(BULK '/Users/behruz/Pictures/contract/IMG_20250411_224018_889.jpg', SINGLE_BLOB) AS IMG
