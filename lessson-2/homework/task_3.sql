@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS photos;
+CREATE TABLE photos(
+    id INT PRIMARY KEY IDENTITY, 
+    photo VARBINARY(MAX)
+);
+
+INSERT INTO photos SELECT * FROM OPENROWSET(BULK '/Users/behruz/Pictures/contract', SINGLE_BLOB) AS IMG
