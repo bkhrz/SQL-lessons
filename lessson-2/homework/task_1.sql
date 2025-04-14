@@ -5,7 +5,7 @@ USE PracticeDB;
 
 DROP TABLE IF EXISTS test_identity -- completely deletes the existing table
 CREATE TABLE test_identity(
-    id INT IDENTITY(1, 1),
+    id INT PRIMARY KEY IDENTITY(1, 1),
     fruits varchar(255)
 );
 
